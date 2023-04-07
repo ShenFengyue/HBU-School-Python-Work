@@ -1,4 +1,7 @@
-```
+```Python
 n=input()
 print(n)
 ```
+
+print("Hello, World!")
+
