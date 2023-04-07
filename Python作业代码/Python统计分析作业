@@ -1,5 +1,3 @@
-
-```
 #这是Python作业代码
 
 import requests
@@ -33,4 +31,3 @@ plt.title('Survey Responses by Age')
 plt.xlabel('Age')
 plt.ylabel('Count')
 plt.show()
-```
