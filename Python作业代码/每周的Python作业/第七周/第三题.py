@@ -1,3 +1,4 @@
+```Python
 #这是第三题
  
 #最开始写好了，然后找不到保存在哪里了。。。换了个方法又写了一遍。
@@ -17,3 +18,4 @@ for m in range(1, n + 1):
 # 如果没有任何一个数满足条件，就打印"No solution."
 if not found:
     print("No solution.")
+```
