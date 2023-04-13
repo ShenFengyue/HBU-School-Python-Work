@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>C</title>
+<style type="text/css">
+<!--
+body {
+	line-height: 26px;
+}
+.red {
+	color: #F00;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<h2 align="center">&nbsp;</h2>
+<p><strong>三. 程序改错题（每题10分 共20分）</strong></p>
+<ol>
+  <li>在Python3.x环境下打开root\<span class="red">bug1.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans11-学号-姓名.py</span>&rdquo;，存放在<span class="red">coot文件夹</span>中。按下列要求进行改错编辑，使其能正确执行。
+    <ol type="a">
+      <li>程序功能：找出100~999之间（包括100和999）所有的水仙花数并输出。水仙花数是一个三位的整数，其各位的立方和正好等于该数。如153=1<sup>3</sup>+5<sup>3</sup>+3<sup>3</sup>。</li>
+      <li>程序中有三处错误（语法错误或者逻辑错误），请改正（<span class="red">不能增删行</span>），使程序能正常运行并输出结果。</li>
+      <li>程序运行结果示例如下图所示。
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><p>&gt;&gt;&gt;<br />
+              153是一个水仙花数<br />
+              370是一个水仙花数<br />
+              371是一个水仙花数<br />
+              407是一个水仙花数<br />            
+            &gt;&gt;&gt;</p></td>
+          </tr>
+        </table>
+      </li>
+    </ol>
+  </li>
+</ol>
+<ol start="2">
+  <li>在Python3.x环境下打开root<span class="red">\bug2.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans12-学号-姓名.py</span>&rdquo;，存放在<span class="red">root</span>文件夹中。按下列要求进行改错编辑，使其能正确执行。
+    <ol type="a">
+      <li>程序功能：输入两个整数，通过调用函数<span class="red">hcf</span>求它们的最大公约数并输出。这里求最大公约数用了穷举法。即：根据最大公约数定义，穷举从两数中较小的数到1，依次判断是否能够同时整除这两个数。</li>
+      <li>程序中有三处错误，请改正（<span class="red">不能增删行</span>），使程序能正常运行并输出结果。</li>
+      <li>程序运行示例如下图所示。
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+        <tr>
+          <td><p>&gt;&gt;&gt; <br />
+            请输入第一个整数：15<br />
+            请输入第二个整数：36<br />
+            15和36的最大公约数为：3<br />
+            &gt;&gt;&gt; ================================ RESTART ================================<br />
+             &gt;&gt;&gt; <br />
+             请输入第一个整数：5<br />
+             请输入第二个整数：6<br />
+             5和6的最大公约数为：1<br />
+             &gt;&gt;&gt; ================================ RESTART ================================<br />
+              &gt;&gt;&gt; <br />
+              请输入第一个整数：3<br />
+              请输入第二个整数：9<br />
+              3和9的最大公约数为：3<br />
+            &gt;&gt;&gt;</p></td>
+          </tr>
+      </table></li>
+    </ol>
+  </li>
+</ol>
+<p><strong>四. 程序填空（2题，每题15分 共30分）</strong></p>
+<ol>
+  <li> 在Python3.x环境下打开root\<span class="red">fillblank1.py</span>程序源文件，并将其另存为&ldquo;<span class="red">ans21-学号-姓名.py</span>&rdquo;，存放在<span class="red">root</span>文件夹中。 按下列要求对文件中的下划线进行填空（用填空内容代替下划线，除此之外，不能改动其它任何地方），调试并运行之。
+    <ol type="a">
+      <li>程序功能：找出1~1000(不包含1000)之间的所有完数，个数之间用逗号间隔，同时在屏幕输出完数的个数。</li>
+      <li>完数说明： 一个数如果恰好等于它的因子之和，这个数就称为“完数”。例如，6的因子为1,2,3，而6=1+2+3，因此6是完数。</li>
+      <li>要求：找出前1000之内的所有完数用函数实现（该函数参数为列表，找出的1000以内的完数利用参数列表<span class="red">返回</span>）。</li>
+      <li>程序如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><pre>
+_____ FindWanshu(lst):     
+    for num in range(1,1000):
+        s = num
+        for i in range(1,num):
+            if num % i == 0:
+                s = s - i
+        if s == 0:
+            lst.append(____) 
+			
+ 
+lst = []
+____________#调用函数 
+
+txt = ""
+for item in lst:
+    txt += str(item)
+    txt += ","
+print(__________)    
+print(&quot;1~1000之间的完数共有{}个&quot;. __________)</pre></td>
+          </tr>
+        </table>
+      </li>
+      <li>程序运行结果示例如下图所示：
+        <table width="100%" border="2" cellpadding="1" cellspacing="0">
+          <tr>
+            <td><p>&gt;&gt;&gt; <br />
+              1~1000之间的完数共有3个<br />
+            &gt;&gt;&gt;</p></td>
+          </tr>
+        </table><br />
+      </li>
+    </ol>
+  五、程序设计题
+  <blockquote>
+    <p>程序运行环境Python3.3，程序文件命名“an<span class="red">s22-学号-姓名.py</span>&rdquo;，<span class="red">\root</span>文件夹中。 按下列要求编写程序调试并运行之。
+    </p>
+  </blockquote>
+  </li>
+
+  <ol type="a">
+    <li>程序功能：找出用户输入整数在列表中的位置。假设该列表已按从大到小的顺序排好了序。 </li>
+    <li>程序部分代码如下图所示：
+      <table width="100%" border="2" cellpadding="1" cellspacing="0">
+        <tr>
+          <td><pre>
+
+def Search(a, target):
+    for _________________:
+       if ____________:
+           k=________________       #target在列表中的索引
+           return k
+    return -1           #未找到，返回-1
+L = [5, 7, 13, 25, 32, 46, 54, 62, 78, 83, 88, 91, 99]  
+find=int(input('请输入要查找的整数：'))
+n=Search(L,find)
+if n==-1:  
+   
+else:  
+    
+            </pre></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </li>
+    <li>程序运行结果如下图所示： 
+      <table width="100%" border="2" cellpadding="1" cellspacing="0">
+        <tr>
+          <td><p>&gt;&gt;&gt; <br />
+            请输入要查找的整数：25<br />
+            25 是第 3 个元素<br />
+            &gt;&gt;&gt; ================================ RESTART ================================<br />
+            &gt;&gt;&gt; <br />
+            请输入要查找的整数：2<br />
+            未找到<br />
+            &gt;&gt;&gt;</p></td>
+        </tr>
+      </table>
+    </li>
+  </ol>
+</ol>
+<p>&nbsp;</p>
+</body>
+</html>
